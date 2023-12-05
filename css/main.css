@@ -1,28 +1,41 @@
-.Click-button{
+.click-button{
     background-color:red;
     color: white;
-    border: none;
-    height: 40px;
     width: 110px;
     border-radius: 20px;
-    cursor: pointer;
     margin-bottom: 8px;
-    font-size: medium;
-    font-weight: bold;
+    transition: opacity 0.15s; 
 }
-.Bukky-button{
+.click-button:hover{
+     opacity: 0.5;
+    }
+.click-button:active{
+    opacity: 0.1;
+}
+.bukky-button{
     background-color: blue;
     color: red;
     width: 110px;
     border-radius: 4px;
     margin-right: 5px;
 }
-.Chocolate-button{
+.bukky-button:hover{
+    background-color: aqua;
+}
+.bukky-button:active{
+    background-color: blanchedalmond;
+}
+.chocolate-button{
     background-color: brown;
     color: bisque;
     width: 120px;
     border-radius: 10px;
-    
+}
+.chocolate-button:hover{
+    color: coral;
+}
+.chocolate-button:active{
+    background-color: darkblue;
 }
 .general-button{
     border: none;
@@ -30,7 +43,6 @@
     cursor: pointer;
     font-size: medium;
     font-weight: bold;
-
 }
 .paragraph{
     background-color: wheat;
@@ -73,13 +85,23 @@
     border-radius: 20px;
     cursor: pointer;
     margin-right: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.19s;
 }
+.add-button:hover{
+    opacity: 0.3
+}
+
 .buy-button{
-    background-color: rgb(255, 164, 28);
+    background-color: #ffa41c;
     color: black;
     width: 170px;
     border-radius: 20px;
     margin-right: 5px;
-   
-}
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.18);
+    transition: opacity 0.20s;
+   }
+   .buy-button:hover{
+    opacity: 0.5;
+   }
 
