@@ -104,6 +104,9 @@
    .buy-button:hover{
     opacity: 0.5;
    }
+   .div-item{
+    margin-bottom: 50px;
+   }
    .backn-button{
     background-color: bisque;
     color: black;
@@ -120,4 +123,32 @@
     font-weight: bold;
     margin: 10px;
    }
+   .title{
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+   }
+   .intro{
+    color:red;
+    font-family: Verdana;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 0;
+   }
+   .body{
+    font-family: Verdana;
+    width: 300px;
+    margin-top: 20px;
+    line-height: 23px;
+   }
+   .get-button{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 7px ;
+    cursor: pointer;
+   }
+   
 
