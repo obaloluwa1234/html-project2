@@ -1,0 +1,92 @@
+body{
+    background-color: #A020F0;
+}
+
+.main-container{
+    background-color: #fff;
+    margin: 200px;
+    border-radius: 10px;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    height: 40px;
+    width: 40px;
+}
+.welcome-text {
+    margin-top: -20px;
+}
+.welcome-text > h4
+{
+    font: bold 18px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome-text > img {
+    height: 20px;
+    width: 20px;
+}
+
+.form{
+    margin-top: -20px;
+    padding: 0px 20px;
+}
+
+.my-form {
+    padding-bottom: 30px;
+}
+.form-input-group{
+    display: block;
+    width: 200px;
+    height: 50px;
+}
+.form-input{
+    border: none;
+    border-bottom: 1px solid;
+    width: 300px;
+    padding: 3px;
+}
+
+.form-button{
+    margin-top: 20px;
+}
+.custom-btn{
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.primary-color{
+    background-color: royalblue
+}
+
+.secondary-color{
+    background-color: gray;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #A020F0;
+}
+.form-input:focus + .icon {
+    border-color: #A020F0;
+}
+.input-icon-group{
+    position: relative;
+    display: inline-block;
+}
+
+.input-icon-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-button > button{
+    margin-bottom: 10px;
+}
+ 
+    
