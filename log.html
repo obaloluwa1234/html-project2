@@ -8,44 +8,41 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main class="main-container">       
-        <div class="centered-content logo">
-            <img src="img/pic1.webp" alt="logo">
-        </div>
-        <div class="centered-content welcome-text">
-            <h4>Welcome back</h4>
-            <img src="./img/hand_smiley.png" alt="welcome emoji" width="80">
-        </div>
-        <div class="form">
-            <span class="centered-content">Please enter your details!</span>
-
-            <form class="my-form" action="/login" method="post">
-                <div class="form-input-group">
-                    <label>Email:</label>
-                    <div class="input-icon-group">
-                        <input type="email" class="form-input" placeholder="email" required>
-                        <i class="icon fa fa-user-circle"></i>
-                    </div>
+        <form class="my-form" action="/login" method="post">
+            <div class="welcome-text">
+                <img src="img/pic1.webp" alt="logo" width="40">
+                <h2 class="header-text">
+                    Welcome back 
+                    <img src="./img/hand_smiley.png" alt="welcome emoji" width="20">
+                </h2>
+                <span class="">Please enter your details!</span>
+            </div>
+            <div class="form-input-group">
+                <label>Email:</label>
+                <div class="input-icon-group">
+                    <input type="email" class="form-input" placeholder="email" required>
+                    <i class="icon fa fa-user-circle"></i>
                 </div>
-                <div class="form-input-group">
-                    <label>Password:</label>
-                    <div class="input-icon-group">
-                        <input type="password" class="form-input" placeholder="password" required>
-                        <i class="icon fa fa-lock"></i>
-                    </div>
+            </div>
+            <div class="form-input-group">
+                <label>Password:</label>
+                <div class="input-icon-group">
+                    <input type="password" class="form-input" placeholder="password" required>
+                    <i class="icon fa fa-lock"></i>
                 </div>
-                <div class="form-input-group form-button">
-                    <button type="button" class="custom-btn primary-color">Login</button>
-                    <button type="button" class="custom-btn secondary-color">
-                        <img src="./img/google.png" alt="" width="40" height="20">
-                        <span>Login with Google</span>
-                    </button>
+            </div>
+            <button type="button" class="form-button custom-btn">Login</button>
+            <button type="button" class="form-button social-btn">
+                <img src="./img/google.png" alt="" width="40" height="20">
+                <span>Login with Google</span>
+            </button>
+            <div class="form-action">
+                <div class="form-action-row">
+                    <span>Don't have an account?</span>
+                    <a href="#">Sign up</a>
                 </div>
-    
-                
-            </form>
-        </div>
-        
-    </main>
+            </div>
+            
+        </form>
 </body>
 </html>
