@@ -8,41 +8,50 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <form class="my-form" action="/login" method="post">
-            <div class="welcome-text">
-                <img src="img/pic1.webp" alt="logo" width="40">
-                <h2 class="header-text">
-                    Welcome back 
-                    <img src="./img/hand_smiley.png" alt="welcome emoji" width="20">
-                </h2>
-                <span class="">Please enter your details!</span>
+    <form class="my-form" action="/login" method="post">
+        <main>this is main</main>
+        <div class="welcome-text">
+            <img src="img/pic1.webp" alt="logo" width="40">
+            <h2 class="header-text" id="header-text" onclick="appendElement(this)">
+                <span>Welcome back</span>
+                <img src="./img/hand_smiley.png" alt="welcome emoji" width="20">
+            </h2>
+            <span class="" id="details_text">Please enter your details!</span>
+        </div>
+        <div class="form-input-group my-fav-div">
+            <label>Email:</label>
+            <div class="input-icon-group">
+                <input type="email" id="email" class="form-input" placeholder="email" required>
+                <i class="icon fa fa-user-circle"></i>
+                <span id="empty-email" hidden style="color: red;">Please enter your email</span>
             </div>
-            <div class="form-input-group">
-                <label>Email:</label>
-                <div class="input-icon-group">
-                    <input type="email" class="form-input" placeholder="email" required>
-                    <i class="icon fa fa-user-circle"></i>
-                </div>
+        </div>
+        <div class="form-input-group">
+            <label>Password:</label>
+            <div class="input-icon-group">
+                <input type="password" class="form-input" placeholder="password" required>
+                <i class="icon fa fa-lock"></i>
             </div>
-            <div class="form-input-group">
-                <label>Password:</label>
-                <div class="input-icon-group">
-                    <input type="password" class="form-input" placeholder="password" required>
-                    <i class="icon fa fa-lock"></i>
-                </div>
+        </div>
+        <button type="button" class="form-button custom-btn" onclick="Login()">Login</button>
+        <button type="button" class="form-button social-btn" onmouseover="changeColor('green')">
+            <img src="./img/google.png" alt="" width="40" height="20">
+            <span >Login with Google</span>
+        </button>
+        <div class="form-action">
+            <div class="form-action-row">
+                <span onclick="changeElementColor(this, 'orange')">Don't have an account?</span>
+                <a href="#">Sign up</a>
             </div>
-            <button type="button" class="form-button custom-btn">Login</button>
-            <button type="button" class="form-button social-btn">
-                <img src="./img/google.png" alt="" width="40" height="20">
-                <span>Login with Google</span>
-            </button>
-            <div class="form-action">
-                <div class="form-action-row">
-                    <span>Don't have an account?</span>
-                    <a href="#">Sign up</a>
-                </div>
-            </div>
-            
-        </form>
+        </div>
+    </form>
+    <br>
+    <button type="button" class="form-button social-btn" onclick="addFruitList()">
+        display fruit list
+    </button>
+    <label for="">List of fruits</label>
+    <ul id="my-list">
+    </ul>
+    <script src="./js/script.js"></script>
 </body>
 </html>

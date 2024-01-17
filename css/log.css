@@ -10,10 +10,12 @@
 body{
     background-color: var(--our-purple-colour);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 30px;
+    scroll-behavior: smooth;
 }
 
 .centered-content {
@@ -82,6 +84,7 @@ form{
     flex-wrap: wrap;
     border-radius: 99px;
     height: 2em;
+    cursor: pointer;
 }
 
 .custom-btn{
@@ -99,9 +102,10 @@ form{
     top: 50%;
     transform: translateY(-50%);
 }
-.form-button > button{
+/* .form-button > button{
+    cursor: pointer;
     margin-bottom: 10px;
-}
+} */
 .my-form > p {
     margin-top: 30px;
 }
@@ -114,4 +118,7 @@ form{
     display: flex;
     justify-content: space-between;
     gap: 10px;
+}
+.form-action-row > a {
+    text-decoration: none;
 }

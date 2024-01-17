@@ -123,6 +123,9 @@
     font-weight: bold;
     margin: 10px;
    }
+   #header-text{
+    color: red;
+   }
    .title{
     font-family: Verdana;
     font-size: 18px;
