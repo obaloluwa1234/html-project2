@@ -141,7 +141,7 @@ function Login() {
 
 
 
-function lifeInWeeks(age) {
+/*function lifeInWeeks(age) {
     let yearsLimit = 90
 
     if (age <= 0 || age > yearsLimit) {
@@ -158,16 +158,70 @@ function lifeInWeeks(age) {
    
 } 
 
-lifeInWeeks(120)
+lifeInWeeks(120) */
 
-function bmiCalculator(weight, height) {
+/*function bmiCalculator(weight, height) {
     
     let bmi = weight / Math.pow(height, 2)
     return Math.round(bmi)
 }
-console.log("my bmi result", bmiCalculator(110, 7.5));
+console.log("my bmi result", bmiCalculator(110, 7.5)); */
+
+/*function isLeapYear(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "leap year"
+            } else {
+                return "Not leap year"
+            }
+        } else {
+          return "leap year"  
+        }
+        
+    } else {
+        return "Not leap year"
+    }
+    
+}
+
+console.log(isLeapYear(1992)); */
+
+/*const myGuestList = ["Obaloluwa", "Obasetemi", "Akinwumi", "Bukola", "Bolanle", "Armstrong"]
+const guestName = prompt("what is your name?")
+if (!guestName) {
+    alert("Enter a valid name")
+}
+if (myGuestList.includes(guestName)) {
+   alert("Welcome") 
+} else {
+    alert("Sorry, maybe next time") 
+} */  
+
+const myNumbers = [];
+
+function fizzBuzz() {
+    
+    for (let count = 1; count < 101; count++) {
+        
+        if (count % 3 == 0 && count % 5 == 0 ) {
+        myNumbers.push("fizzbuzz");
+    }
+        else if (count % 3 == 0) {
+            myNumbers.push("fizz");
+        }
+        else if (count % 5 == 0) {
+            myNumbers.push("buzz");
+        } else {
+            myNumbers.push(count)
+        }
 
 
+    }
+    return myNumbers
+
+}
+console.log(fizzBuzz());
 
 
 
